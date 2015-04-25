@@ -14,6 +14,8 @@
 	border-color: #78FA89;
 }
 
+.center-block {float: none !important}
+
 
 
 
@@ -211,3 +213,18 @@ h1, h3{
 
 
 
+
+
+
+.signin-a, .signin-b, .signup-a, .signup-b, .reset, .edit-prof, .social, .password{
+	border: 2px solid #4cd964;
+	padding: 20px;
+}
+
+.signin-b-form, .signup-b-form, .reset-form, .edit-prof-form, .password-form{
+	padding: 0 20px;
+}
+
+.signin-a img, .signup-a img{
+	width:80px;
+}
