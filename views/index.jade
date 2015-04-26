@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans')
+    link(rel='stylesheet', href='/css/style.css')
+
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    link(rel='stylesheet' href='/css/bootstrap.min.css')
+    link(rel='stylesheet' href='/css/bootstrap-theme.min.css')
+
+    script(type='text/javascript' src='/js/bootstrap.min.js')
+
+    script(src='//code.jquery.com/jquery-1.11.0.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/js/index.js')
+
+    script(type='text/javascript' src='/js/bootstrap.min.js')
+
+    title Dirty Diapers Advice Chat
+  
+
+  body
+
+    block content
+
+      .wrap
+          .container-fluid
+              h1 Dirty Diapers Advice Chat
+              #messages
+
+
+
+  .push
+  .footer
+    .container-fluid
+      .row
+        .col-xs-8.col-sm-9
+
+    div
+      div.inlineBlock.bottom
+        span Your name:
+          input(type="text", value="Anonymous")#name
+        br
+
+
+        .col-xs-4.col-sm-3
+
+          form#messageForm
+          textarea(rows="4", cols="200", placeholder="Share something!", maxlength=200)#outgoingMessage
+          input(type="button", value="Send", disabled=true)#send
+          
+    div.inlineBlock.topAligned
+        b Participants in the chat:
+        br
+        div#participants
+    div#messages
