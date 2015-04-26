@@ -125,11 +125,12 @@ a:hover{
 	color:#fff;
 }
 
-.btn-default{
+.btn-default, .btn.btn-primary.btn-lg.track{
 	border: 2px solid #4cd964;
 	background: #4cd964;
 	color: #fff;
 	text-shadow:none;
+	border-radius: 4px;
 }
 
 a.btn.btn-default, .btn-primary {
@@ -139,7 +140,7 @@ a.btn.btn-default, .btn-primary {
 	text-shadow:none;
 }
 
-a.btn.btn-default:hover, .btn-primary:hover, .btn-default:hover {
+a.btn.btn-default:hover, .btn-primary:hover, .btn-default:hover , .btn.btn-primary.btn-lg.track:hover {
 	border: 2px solid #4cd964;
 	opacity: 0.9;
 	background: #4cd964;
@@ -227,4 +228,10 @@ h1, h3{
 
 .signin-a img, .signup-a img{
 	width:80px;
+}
+
+
+
+.track{
+	margin: 20px;
 }
